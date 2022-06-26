@@ -7,22 +7,20 @@ import {
 } from 'react-router-dom';
 import 'styles/index.css';
 import ReactDOM from 'react-dom';
-import {
-  persistStore,
-} from 'redux-persist';
-import { PersistGate } from 'redux-persist/integration/react';
+// import {
+//   persistStore,
+// } from 'redux-persist';
+// import { PersistGate } from 'redux-persist/integration/react';
 import { store } from 'store';
 import { Provider } from 'react-redux';
 import App from './pages';
 
-const persistor = persistStore(store);
+// const persistor = persistStore(store);
 
 ReactDOM.render(
   <Router>
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <App />
-      </PersistGate>
+      <App />
     </Provider>
   </Router>,
   document.getElementById('root'),
