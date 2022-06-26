@@ -51,10 +51,10 @@ ReactDOM.render(
           <Checbox label="Item" identifier="key1" />
         </div>
         <div className="bg-white p-4">
-          <SearchBar placeholder="Search for pets" border="border" />
+          <SearchBar placeholder="Search for pets" border="border" answers={['begale', 'toogle']} />
         </div>
         <div className="bg-white p-4">
-          <SearchBar wsize="w-80" placeholder="Search for pets" border="border" bgcolor="bg-gray-200" />
+          <SearchBar wsize="w-80" placeholder="Search for pets" border="border" bgcolor="bg-gray-200" answers={['begale', 'toogle']} />
         </div>
       </div>
     </Provider>
