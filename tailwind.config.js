@@ -1,18 +1,18 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable quote-props */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     extend: {
       colors: {
-        'dark-aqua': '#0B6D6A',
-        'dark-teal': '#064B49',
-        'white-dirt': '#FAF9FA',
-        'light-blue': '#00A1DE',
-        gray: {
-          300: '#F5F5F5',
-          200: '#E5E5E5',
-          400: '#E3E3E3',
-        },
+        'red': '#BF2C23',
+        'yellow': '#E0B833',
+        'light-yellow': '#F8CF47',
+        'dark-blue': '#285DAB',
+        'light-blue': '#2B6DB1',
+        'dark-grey': '#666666',
+        'grey': '#DDDDDD',
+        'light-grey': '#F0F0F0',
       },
       fontFamily: {
         montserrat: ['Montserrat'],

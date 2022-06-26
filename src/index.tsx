@@ -13,13 +13,15 @@ import ReactDOM from 'react-dom';
 // import { PersistGate } from 'redux-persist/integration/react';
 import { store } from 'store';
 import { Provider } from 'react-redux';
-import Buttons from './core-ui/components(common components)/Buttons';
-
+import App from 'pages';
+// import { Header } from 'components';
+// import Buttons from './core-ui/components(common components)/Buttons';
 // const persistor = persistStore(store);
 
 ReactDOM.render(
   <Router>
     <Provider store={store}>
+      <App />
       {/* <MantineProvider theme={{
           fontFamily: 'Montserrat',
         }}
@@ -30,14 +32,15 @@ ReactDOM.render(
             </ModalsProvider>
           </NotificationsProvider>
         </MantineProvider> */}
-      <div className="bg-gray-200 p-5">
+      {/* <div className="bg-gray-200 p-5">
+        <Header classes="bg-yellow-400" />
         <div>
           <Buttons text="Text" bgcolor="#2B6DB1" textcolor="#fff" wsize="w-60" isicon={false} />
         </div>
         <div className="mt-2">
           <Buttons text="Text" bgcolor="#fff" textcolor="#2B6DB1" wsize="w-40" />
         </div>
-      </div>
+      </div> */}
     </Provider>
   </Router>,
   document.getElementById('root'),
