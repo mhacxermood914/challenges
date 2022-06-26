@@ -32,10 +32,13 @@ ReactDOM.render(
         </MantineProvider> */}
       <div className="bg-gray-200 p-5">
         <div>
-          <Buttons text="Text" bgcolor="#2B6DB1" textcolor="#fff" wsize="w-60" isicon={false} />
+          <Buttons text="Text" bgcolor="#2B6DB1" textcolor="#fff" wsize="w-60" />
         </div>
         <div className="mt-2">
           <Buttons text="Text" bgcolor="#fff" textcolor="#2B6DB1" wsize="w-40" />
+        </div>
+        <div className="mt-2">
+          <Buttons text="Text" bgcolor="#fff" textcolor="#2B6DB1" wsize="w-20" hsize="h-20" isicon="true" />
         </div>
       </div>
     </Provider>

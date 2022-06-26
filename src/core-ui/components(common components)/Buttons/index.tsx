@@ -1,20 +1,24 @@
 import React from 'react';
 
 function Buttons({
-  text, bgcolor, textcolor, wsize, isicon,
+  text, bgcolor, textcolor, wsize, hsize, isicon,
 }:any) {
   const customeStyle = {
     backgroundColor: bgcolor,
     color: textcolor,
   };
-  const customeClassName = `${wsize}  rounded-full py-2 font-medium text-sm`;
+
+  let customeClassName = `${wsize} rounded-full font-medium text-sm`;
   if (isicon) {
+    customeClassName = `${hsize} ${customeClassName} flex items-center justify-center`;
     return (
       <button type="button" style={customeStyle} className={customeClassName}>
-        icon
+        <img src="/icons/arrow-right.svg" alt="arrow ico" />
       </button>
     );
   }
+  customeClassName = `py-2 ${customeClassName}`;
+
   return (
     <button type="button" style={customeStyle} className={customeClassName}>
       {text}
