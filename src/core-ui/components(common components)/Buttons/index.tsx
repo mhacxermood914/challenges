@@ -1,14 +1,14 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 
 function Buttons({
   text, bgcolor, textcolor, wsize, hsize, isicon,
 }:any) {
   const customeStyle = {
-    backgroundColor: bgcolor,
     color: textcolor,
   };
 
-  let customeClassName = `${wsize} rounded-full font-medium text-sm`;
+  let customeClassName = `${wsize} ${bgcolor} rounded-full font-medium text-sm`;
   if (isicon) {
     customeClassName = `${hsize} ${customeClassName} flex items-center justify-center`;
     return (

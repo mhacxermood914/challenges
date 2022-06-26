@@ -14,7 +14,7 @@ import {
 export const Layout = () => {
   return (
     <>
-      ok dol
+      <Header classes="bg-red" />
       <Outlet />
     </>
   );

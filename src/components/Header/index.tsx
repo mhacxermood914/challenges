@@ -6,9 +6,9 @@
 
 import React from 'react';
 
-const Header: React.FC<{ bgColor: string, height: string, logoUrl?: string }> = ({ bgColor, height }) => {
+const Header: React.FC<{ classes: any }> = ({ classes }) => {
   return (
-    <div className={`bg-${bgColor} h-${height}`}>ok</div>
+    <div className={classes}>ok</div>
   );
 };
 
