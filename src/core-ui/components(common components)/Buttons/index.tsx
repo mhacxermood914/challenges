@@ -8,7 +8,7 @@ function Buttons({
     backgroundColor: bgcolor,
     color: textcolor,
   };
-  const customeClassName = `${wsize}  rounded-full py-2 font-medium text-sm`;
+  const customeClassName = `${wsize}  rounded-full py-2 font-medium text-sm my-2`;
   if (isicon) {
     return (
       <button type="button" style={customeStyle} className={customeClassName}>

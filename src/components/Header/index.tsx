@@ -8,7 +8,9 @@ import React from 'react';
 
 const Header: React.FC<{ classes: any }> = ({ classes }) => {
   return (
-    <div className={classes}>ok</div>
+    <div className={classes.header}>
+      <img src="/icons/pet-icon.svg" alt="pet-icon" className={classes.img} />
+    </div>
   );
 };
 

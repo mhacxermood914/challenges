@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable quote-props */
 module.exports = {
+  mode: 'jit',
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     extend: {

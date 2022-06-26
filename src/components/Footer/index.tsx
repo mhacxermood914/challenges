@@ -2,9 +2,9 @@
 
 import React from 'react';
 
-const Footer: React.FC<{ bgColor: string, height: string }> = ({ bgColor, height }) => {
+const Footer: React.FC<{ classes: any }> = ({ classes }) => {
   return (
-    <div className={`bg-${bgColor} h-${height}`} />
+    <div className={classes.footer} />
   );
 };
 
