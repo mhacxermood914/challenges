@@ -7,11 +7,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-function Dashboard():JSX.Element {
+const Home: React.FC<{}> = () => {
   return (
     <>
+      Home
     </>
   );
-}
+};
 
-export default Dashboard;
+export default Home;
