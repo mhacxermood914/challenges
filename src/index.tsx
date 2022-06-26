@@ -16,9 +16,10 @@ import { store } from 'store';
 import { Provider } from 'react-redux';
 import App from 'pages';
 // import { Header } from 'components';
-// import Buttons from './core-ui/components(common components)/Buttons';
-// import Checbox from './core-ui/components(common components)/Checkbox';
-// import SearchBar from './core-ui/components(common components)/SearchBar';
+import Buttons from './core-ui/components(common components)/Buttons';
+import Checbox from './core-ui/components(common components)/Checkbox';
+import SearchBar from './core-ui/components(common components)/SearchBar';
+import Pill from './core-ui/components(common components)/Pill';
 // const persistor = persistStore(store);
 
 ReactDOM.render(
@@ -57,7 +58,8 @@ ReactDOM.render(
         <div className="bg-white p-4">
           <SearchBar wsize="w-80" placeholder="Search for pets" border="border" bgcolor="bg-gray-200" answers={['begale', 'toogle']} />
         </div>
-      </div> */}
+        <Pill bgcolor="bg-white" text="Item" border="" />
+      </div>
     </Provider>
   </Router>,
   document.getElementById('root'),
