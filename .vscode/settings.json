@@ -8,5 +8,6 @@
         "noninteractive",
         "persistor",
         "Reinitialze"
-    ]
+    ],
+    "nuxt.isNuxtApp": false
 }

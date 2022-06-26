@@ -5,6 +5,8 @@
   "dependencies": {
     "@craco/craco": "^6.4.3",
     "@headlessui/react": "^1.6.1",
+    "@mantine/modals": "^4.2.11",
+    "@mantine/notifications": "^4.2.11",
     "@reduxjs/toolkit": "^1.8.1",
     "@rematch/core": "^2.2.0",
     "@testing-library/jest-dom": "^5.16.4",
