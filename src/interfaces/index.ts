@@ -1,20 +1,13 @@
 /* eslint-disable linebreak-style */
-export interface IRoles {
-    label: string
-    value: string
-}
-
-export interface ILogin {
-    email: string
-    password: string
-}
-
-export interface IRegister {
-    firstname: string
-    lastname: string
-    email: string
-    password: string
-    role: string
-    confirm_password?: string
-    lang: string
+export interface IColors {
+    red: string
+    yelllow: string
+    light_yellow: string
+    dark_blue: string
+    light_blue: string
+    dark_grey: string
+    grey: string
+    light_grey: string
+    white: string
+    black: string
 }

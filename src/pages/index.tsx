@@ -9,17 +9,13 @@ import {
   Route,
 } from 'react-router-dom';
 import { Layout } from 'layouts/default';
-import Dashboard from './Dashboard';
-import Profile from './Dashboard/Profile';
-import Login from './Login';
+import Home from './Home';
 
-function App(): JSX.Element {
+function App() {
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="dashboard/" element={<Layout />}>
-        <Route path="/dashboard/" element={<Dashboard />} />
-        <Route path="/dashboard/profile" element={<Profile />} />
+      <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Home />} />
       </Route>
     </Routes>
   );

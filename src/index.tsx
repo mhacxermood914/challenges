@@ -13,10 +13,6 @@ import {
 import { PersistGate } from 'redux-persist/integration/react';
 import { store } from 'store';
 import { Provider } from 'react-redux';
-// import { MantineProvider } from '@mantine/core';
-// import { NotificationsProvider } from '@mantine/notifications';
-// import { ModalsProvider } from '@mantine/modals';
-// import App from './pages';
 import Buttons from './core-ui/components(common components)/Buttons';
 
 const persistor = persistStore(store);
@@ -37,14 +33,13 @@ ReactDOM.render(
         </MantineProvider> */}
         <div className="bg-gray-200 p-5">
           <div>
-            <Buttons text="Text" bgcolor="#2B6DB1" textcolor="#fff" wsize="w-60" />
+            <Buttons text="Text" bgcolor="#2B6DB1" textcolor="#fff" wsize="w-60" isicon={false} />
           </div>
           <div className="mt-2">
             <Buttons text="Text" bgcolor="#fff" textcolor="#2B6DB1" wsize="w-40" />
           </div>
         </div>
       </PersistGate>
-
     </Provider>
   </Router>,
   document.getElementById('root'),
