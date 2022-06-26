@@ -12,6 +12,7 @@ import { useSelector } from 'react-redux';
 import { usePetsQuery } from 'services/api/pets';
 import Pets from 'components/Pets';
 import Slider from 'react-slick';
+import SearchBar from 'core-ui/components(common components)/SearchBar';
 import { PrevArrow, NextArrow } from 'core-ui/components(common components)/Arrows';
 
 const Home: React.FC<{}> = () => {
@@ -25,7 +26,6 @@ const Home: React.FC<{}> = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <NextArrow className={undefined} style={undefined} onClick={undefined} />,
-    prevArrow: <PrevArrow className={undefined} style={undefined} onClick={undefined} />,
   };
 
   React.useEffect(() => {
@@ -34,9 +34,10 @@ const Home: React.FC<{}> = () => {
 
   return (
     <>
-      <h1 className="font-bold lg:text-2xl">
+      <h1 className="font-bold lg:text-2xl mb-4">
         Pets
       </h1>
+      <SearchBar placeholder="Search for pets" border="border" answers={['begale', 'toogle']} wsize="w-60" hsize="h-40" />
       <h2 className="font-bold text-xl">Results</h2>
       <Slider {...settings}>
         {

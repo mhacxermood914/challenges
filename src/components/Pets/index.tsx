@@ -9,7 +9,7 @@ const Pets: React.FC<{ photo: string, id: string, name: string }> = ({ photo, id
       <img src={photo} key={id} alt={name} className="h-64 object-cover rounded-xl w-full" />
       <div className="py-4">
         <span className="font-semibold block">{name}</span>
-        <Buttons text="View" bgcolor="#2B6DB1" textcolor="#fff" wsize="w-24" isicon={false} />
+        <Buttons classes={{ btn: 'bg-light-blue text-white w-24 py-2 my-2' }}>View</Buttons>
       </div>
     </div>
   );
